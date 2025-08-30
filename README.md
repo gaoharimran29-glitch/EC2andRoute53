@@ -1,6 +1,6 @@
-# 🌐 Hosting a Website on AWS EC2 with Route 53 and SSL  
+# Hosting a Website on AWS EC2 with Route 53 and SSL  
 
-## 🚀 Steps to Deploy
+## Steps to Deploy
 
 ### 1. Launch EC2 Instance  
 - Go to AWS Console, then EC2, then Launch Instance  
@@ -9,7 +9,7 @@
 - Use Putty
 - Allow **HTTP (80)**, **HTTPS (443)**, and **SSH (22)**  
 - Launch instance
-## 🚀 Launched EC2 Instance
+## Launched EC2 Instance
 ![EC2 Instance](cloudimages/ec2launchedinstance.png)
 
 
@@ -44,14 +44,14 @@ sudo vi index.html
 - Register your own domain name.
 - Go to Route 53 on AWS, Click on Hosted Zones.
 - You will get four NS name server.
-## 🚀 NS Name Servers
+## NS Name Servers
   ![NS Name servers](cloudimages/nsservernamesineroute53hostedzone.png)
 - Then update these name server in your domain.
 - Create **A record**
 - Set your domain, Enter your allotted Public IP and then Map it.
-## 🚀 Route 53 Hosted Zone
+## Route 53 Hosted Zone
 ![Route 53 Hosted Zone](cloudimages/route53hostedzone.png)
-## 🚀 Website before SSL certfication (Showing Not Secure)
+## Website before SSL certfication (Showing Not Secure)
 ![Webiste before SSL certification](cloudimages/websitebeforesslcertification.png)
 
 ### 6. Enable SSL (HTTPS) using Certbot  
@@ -64,5 +64,5 @@ sudo certbot --apache
 - Then SSl certification will deployed to your domain name.
   Check in browser → `http://yourpublicip`
 
-## 🚀 Website after SSL certfication (Showing Secure)
+## Website after SSL certfication (Showing Secure)
 ![Webiste after SSL certification](cloudimages/websiteaftersslcertification.png)
