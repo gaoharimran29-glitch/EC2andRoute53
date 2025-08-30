@@ -47,8 +47,10 @@ sudo vi index.html
 ![Route 53 Hosted Zone](cloudimages/route53hostedzone.png)
 - You will get four NS name server.
 ## NS Name Servers
-  ![NS Name servers](cloudimages/nsservernamesineroute53hostedzone.png)
+  ![NS Name servers](cloudimages/nsserver.png)
 - Then update these name server in your domain.
+## Name server edited on Domain
+![Nameservereditedondomain](cloudimages/registereddomain.png)
 - Create **A record**
 - Set your domain, Enter your allotted Public IP and then Map it.
 ## Website before SSL certfication (Showing Not Secure)
@@ -56,6 +58,7 @@ sudo vi index.html
 
 ### 6. Enable SSL (HTTPS) using Certbot  
 ```bash
+sudo apt update
 sudo apt install certbot python3-certbot-apache -y
 sudo certbot --apache
 ```
@@ -65,4 +68,4 @@ sudo certbot --apache
   Check in browser → `http://yourpublicip`
 
 ## Website after SSL certfication (Showing Secure)
-![Webiste ater SSL certification](cloudimages/websiteaftersslcertification.png)
+![Webiste ater SSL certification](cloudimages/securedsite.png)
