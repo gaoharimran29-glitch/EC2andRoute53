@@ -3,7 +3,7 @@
 ## 🚀 Steps to Deploy
 
 ### 1. Launch EC2 Instance  
-- Go to AWS Console → EC2 → Launch Instance  
+- Go to AWS Console, then EC2, then Launch Instance  
 - Choose **Ubuntu**  
 - Create and Use key pair
 - Use Putty
@@ -14,11 +14,11 @@
 
 
 ### 2. Connect to EC2 (using PuTTY/SSH)  
-- Download Putty .exe file.
+- Download Putty.exe file and install it in your device.
 - Go to connection.
 - Go to SSH
 - Go to Auth
-- Choose key pair file
+- Choose key pair file you made while creating instance.
 ```bash
 login as username: ubuntu
 ```
@@ -31,7 +31,6 @@ sudo apt install apache2
 Check in browser → `http://yourpublicip`
 - An Apache page will be shown to your public ip.
 
-### 4. Upload Your Website Files  
 ```bash
 cd /var/www/html
 sudo rm index.html
@@ -40,16 +39,16 @@ sudo vi index.html
 - Press I to insert your own html code.
 - Write your own code.
 - After writing all code , Press Ctrl+C and then write ":wq" and Press Enter.
-- Upload your own `index.html` or project files. 
 
 ### 5. Map Domain with Route 53  
-- Go to Route 53 → Hosted Zones
+- Register your own domain name.
+- Go to Route 53 on AWS, Click on Hosted Zones.
 - You will get four NS name server.
 ## 🚀 NS Name Servers
   ![NS Name servers](cloudimages/nsservernamesineroute53hostedzone.png)
 - Then update these name server in your domain.
 - Create **A record**
-- Set your domain → Map with EC2 **Public IP**
+- Set your domain, Enter your allotted Public IP and then Map it.
 ## 🚀 Route 53 Hosted Zone
 ![Route 53 Hosted Zone](cloudimages/route53hostedzone.png)
 ## 🚀 Website before SSL certfication (Showing Not Secure)
