@@ -49,7 +49,7 @@ sudo vi index.html
 ## NS Name Servers
   ![NS Name servers](cloudimages/nsserver.png)
 - Then update these name server in your domain.
-## Domain Name edited Name server
+## Domain Name adding Name server
 ![Nameservereditedondomain](cloudimages/registereddomain.png)
 - Create **A record**
 - Set your domain, Enter your allotted Public IP and then Map it.
@@ -65,7 +65,7 @@ sudo certbot --apache
 - Then it will ask an email.
 - Then it will ask your domain name , So just write it.
 - Then SSL certification will deployed to your domain name.
-  Check in browser → `http://yourpublicip`
+  Check in browser → `https://yourpublicip`
 
-## Website after SSL certfication using https (Showing Secure)
+## Website after SSL certfication using https (Showing Connection is Secure)
 ![Webiste ater SSL certification](cloudimages/securedsite.png)
