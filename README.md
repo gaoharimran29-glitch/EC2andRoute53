@@ -61,7 +61,7 @@ sudo certbot --apache
 ```
 - Then it will ask an email.
 - Then it will ask your domain name , So just write it.
-- Then SSl certification will deployed to your domain name.
+- Then SSL certification will deployed to your domain name.
   Check in browser → `http://yourpublicip`
 
 ## Website after SSL certfication (Showing Secure)
