@@ -10,7 +10,7 @@
 - Allow **HTTP (80)**, **HTTPS (443)**, and **SSH (22)**  
 - Launch instance
 
-![EC2 Instance](cloudimages/)
+![EC2 Instance](cloudimages/EC2launchedinstance.png)
 
 
 ### 2. Connect to EC2 (using PuTTY/SSH)  
@@ -45,9 +45,13 @@ sudo vi index.html
 ### 5. Map Domain with Route 53  
 - Go to Route 53 → Hosted Zones
 - You will get four NS name server.
+  ![NS Name servers](cloudimages/NS server name in Route 53 hosted zone.png)
 - Then update these name server in your domain.
 - Create **A record**
-- Set your domain → Map with EC2 **Public IP**  
+- Set your domain → Map with EC2 **Public IP**
+
+![Route 53 Hosted Zone](cloudimages/Route53hostedzone.png)
+![Webiste before SSL certification](cloudimages/wesbitebeforeSSLcertification.png)
 
 ### 6. Enable SSL (HTTPS) using Certbot  
 ```bash
@@ -58,3 +62,5 @@ sudo certbot --apache
 - Then it will ask your domain name , So just write it.
 - Then SSl certification will deployed to your domain name.
   Check in browser → `http://yourpublicip`
+
+![Webiste after SSL certification](cloudimages/wesbiteafterSSLcertification.png)
