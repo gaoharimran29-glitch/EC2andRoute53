@@ -45,7 +45,8 @@ sudo vi index.html
 ### 5. Map Domain with Route 53  
 - Go to Route 53 → Hosted Zones
 - You will get four NS name server.
-  ![NS Name servers](cloudimages/NS server name in Route 53 hosted zone.png)
+## 🚀 NS Name Servers
+  ![NS Name servers](cloudimagescloudimages/nsservernamesineroute53hostedzone.png)
 - Then update these name server in your domain.
 - Create **A record**
 - Set your domain → Map with EC2 **Public IP**
