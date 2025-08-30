@@ -43,14 +43,14 @@ sudo vi index.html
 ### 5. Map Domain with Route 53  
 - Register your own domain name.
 - Go to Route 53 on AWS, Click on Hosted Zones.
+## Route 53 Hosted Zone
+![Route 53 Hosted Zone](cloudimages/route53hostedzone.png)
 - You will get four NS name server.
 ## NS Name Servers
   ![NS Name servers](cloudimages/nsservernamesineroute53hostedzone.png)
 - Then update these name server in your domain.
 - Create **A record**
 - Set your domain, Enter your allotted Public IP and then Map it.
-## Route 53 Hosted Zone
-![Route 53 Hosted Zone](cloudimages/route53hostedzone.png)
 ## Website before SSL certfication (Showing Not Secure)
 ![Webiste before SSL certification](cloudimages/websitebeforesslcertification.png)
 
@@ -65,4 +65,4 @@ sudo certbot --apache
   Check in browser → `http://yourpublicip`
 
 ## Website after SSL certfication (Showing Secure)
-![Webiste after SSL certification](cloudimages/websiteaftersslcertification.png)
+![Webiste ater SSL certification](cloudimages/websiteaftersslcertification.png)
